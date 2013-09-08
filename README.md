@@ -1,6 +1,6 @@
 configs
 =======
-Currently having configs for:
+Currently storing configs for:
 
 * Oh-My-Zsh!
 * Agnoster Zsh Theme (Some little changes have been made to it)
