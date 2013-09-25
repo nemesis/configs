@@ -28,7 +28,7 @@ set rtp+=~/.vim/bundle/vundle
 set viminfo='10,\"100,:20,%,n~/.viminfo
 
 call vundle#rc()
-colorscheme darkblue
+colorscheme default
 
 map Y y$
 map <Space> :tabn<CR>
@@ -39,6 +39,7 @@ map n :tabnew<CR>
 map . :tabc<CR>
 map T :NERDTreeToggle ~/Documents/nemesis/<CR>
 map t :NERDTreeClose<CR>
+map <C-p> :w<CR>:!perl %<CR>
 nnoremap <C-L> :nohl<CR><C-L>
 
 function! ResCur()
@@ -67,3 +68,11 @@ set statusline=2
 let g:Powerline_symbols = 'fancy'
 
 set term=xterm-256color
+
+" Template for Perl
+:au BufNewFile *.pl r ~/.TEMPLATES/PERL.pl
+
+" Vala
+
+autocmd BufRead *.vala,*.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+au BufRead,BufNewFile *.vala,*.vapi setfiletype vala
