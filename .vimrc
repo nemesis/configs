@@ -26,6 +26,7 @@ set softtabstop=4
 set expandtab
 set rtp+=~/.vim/bundle/vundle
 set viminfo='10,\"100,:20,%,n~/.viminfo
+set clipboard=unnamed
 
 call vundle#rc()
 colorscheme default
@@ -37,9 +38,9 @@ map <CR> :nohlsearch<CR>
 map N :tabnew<CR>
 map n :tabnew<CR>
 map . :tabc<CR>
-map T :NERDTreeToggle ~/Documents/nemesis/<CR>
-map t :NERDTreeClose<CR>
+map <C-t> :NERDTreeToggle ~/Documents/nemesis/<CR>
 map <C-p> :w<CR>:!perl %<CR>
+map <C-r> :w<CR>:!ruby %<CR>
 nnoremap <C-L> :nohl<CR><C-L>
 
 function! ResCur()
