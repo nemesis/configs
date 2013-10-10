@@ -27,6 +27,9 @@ set expandtab
 set rtp+=~/.vim/bundle/vundle
 set viminfo='10,\"100,:20,%,n~/.viminfo
 set clipboard=unnamed
+set listchars=tab:»·,trail:·
+set list
+hi SpecialKey ctermbg=red ctermfg=red guibg=red guifg=red
 
 call vundle#rc()
 colorscheme default
