@@ -3,6 +3,6 @@ configs
 Currently storing configs for:
 
 * Oh-My-Zsh!
-* Agnoster Zsh Theme (Some little changes have been made to it)
+* Agnoster Zsh Theme
 * Vim
 * Quake III Arena / Quake Live
