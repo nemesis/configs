@@ -92,7 +92,7 @@ prompt_git() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue black '%c'
+  prompt_segment cyan black '%c'
 }
 
 prompt_timestamp() {

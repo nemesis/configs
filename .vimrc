@@ -31,9 +31,6 @@ set listchars=tab:»·,trail:·
 set list
 hi SpecialKey ctermbg=red ctermfg=red guibg=red guifg=red
 
-call vundle#rc()
-colorscheme default
-
 map Y y$
 map <Space> :tabn<CR>
 map <Tab> :tabn<CR>
@@ -58,12 +55,14 @@ function! ResCur()
                     autocmd BufWinEnter * call ResCur()
                 augroup END
 
+call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'vim-perl/vim-perl'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
+Bundle 'flazz/vim-colorschemes'
 
 set encoding=utf-8
 set termencoding=utf-8
@@ -72,6 +71,7 @@ set statusline=2
 let g:Powerline_symbols = 'fancy'
 
 set term=xterm-256color
+colorscheme rcg_term
 
 " Template for Perl
 :au BufNewFile *.pl r ~/.TEMPLATES/PERL.pl
