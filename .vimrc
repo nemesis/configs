@@ -29,6 +29,7 @@ set viminfo='10,\"100,:20,%,n~/.viminfo
 set clipboard=unnamed
 set listchars=tab:»·,trail:·
 set list
+
 hi SpecialKey ctermbg=red ctermfg=red guibg=red guifg=red
 
 map Y y$
@@ -73,10 +74,7 @@ let g:Powerline_symbols = 'fancy'
 set term=xterm-256color
 colorscheme rcg_term
 
-" Template for Perl
 :au BufNewFile *.pl r ~/.TEMPLATES/PERL.pl
-
-" Vala
-
-autocmd BufRead *.vala,*.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-au BufRead,BufNewFile *.vala,*.vapi setfiletype vala
+:au BufNewFile *.rb r ~/.TEMPLATES/RUBY.rb
+:autocmd BufRead *.vala,*.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+:au BufRead,BufNewFile *.vala,*.vapi setfiletype vala

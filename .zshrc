@@ -20,6 +20,9 @@ alias processing='~/Documents/nemesis/soft/processing-2.0.3/processing'
 alias open='xdg-open'
 alias mkdir='mkdir -p'
 alias vbuild='valac --pkg gtk+-3.0'
+alias dus='du -skh * | sort -h'
+alias rspec='rspec --color'
+alias rspcn='rspec --format nested'
 
 # suffix aliases
 
