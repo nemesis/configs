@@ -1,0 +1,19 @@
+{
+	"color_scheme": "Packages/Theme - Nil/Tubnil.tmTheme",
+	"folder_exclude_patterns":
+	[
+		".git",
+		".bundle",
+		".sass-cache",
+		".svn",
+		".hg"
+	],
+	"font_size": 13.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"open_files_in_new_window": false,
+	"theme": "Nil.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": true
+}
+
