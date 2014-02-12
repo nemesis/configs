@@ -1,29 +1,9 @@
 # vim:ft=zsh ts=2 sw=2 sts=2
+# Original theme is due to agnoster - https://gist.github.com/agnoster/3712874
+# This is just a bit deviated from it, also supports timestamp and has different colors
+# If you want to enable the timestamp, uncomment the last line which assigns to RPROMPT
 #
-# agnoster's Theme - https://gist.github.com/3712874
-# A Powerline-inspired theme for ZSH
-#
-# # README
-#
-# In order for this theme to render correctly, you will need a
-# [Powerline-patched font](https://gist.github.com/1595572).
-#
-# In addition, I recommend the
-# [Solarized theme](https://github.com/altercation/solarized/) and, if you're
-# using it on Mac OS X, [iTerm 2](http://www.iterm2.com/) over Terminal.app -
-# it has significantly better color fidelity.
-#
-# # Goals
-#
-# The aim of this theme is to only show you *relevant* information. Like most
-# prompts, it will only show git information when in a git working directory.
-# However, it goes a step further: everything from the current user and
-# hostname to whether the last call exited with an error to whether background
-# jobs are running in this shell will all be displayed automatically when
-# appropriate.
-
-### Segment drawing
-# A few utility functions to make it easy and re-usable to draw segmented prompts
+# Good luck and happy scripting!
 
 CURRENT_BG='NONE'
 SEGMENT_SEPARATOR='⮀'
@@ -47,7 +27,7 @@ prompt_segment() {
 prompt_reversed_segment() {
   [[ -n $1 ]] && bg="%K{$1}" || bg="%k"
   [[ -n $2 ]] && fg="%F{$2}" || fg="%f"
-    echo -n "$R_SEGMENT_SEPARATOR%{$bg%F{$CURRENT_BG}%}%{$fg%}"
+    echo -n "$R_SEGMENT_SEPARATOR%{$fg%}%{$fg%F{$bg%}%}"
   CURRENT_BG=$1
   [[ -n $3 ]] && echo -n $3
 }
@@ -120,7 +100,6 @@ build_prompt() {
   prompt_context
   prompt_dir
   prompt_git
-  #prompt_timestamp
   prompt_end
 }
 
