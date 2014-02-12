@@ -1,6 +1,8 @@
 syntax on
 filetype indent plugin on
 
+scriptencoding utf-8
+set encoding=utf-8
 set nocompatible
 set hidden
 set wildmenu
@@ -61,21 +63,12 @@ Bundle 'gmarik/vundle'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'vim-perl/vim-perl'
+Bundle 'flazz/vim-colorschemes'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
 
-set encoding=utf-8
-set termencoding=utf-8
-set statusline=2
-
 let g:Powerline_symbols = 'fancy'
 
+set termencoding=utf-8
+set statusline=2
 set term=xterm-256color
-
-" Template for Perl
-:au BufNewFile *.pl r ~/.TEMPLATES/PERL.pl
-
-" Vala
-
-autocmd BufRead *.vala,*.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-au BufRead,BufNewFile *.vala,*.vapi setfiletype vala
