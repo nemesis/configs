@@ -40,7 +40,7 @@ export PATH=$PATH:/usr/bin/perl:/Users/nemesis/.rvm/gems/ruby-2.0.0-p247/bin:/Us
 export TERM="xterm-256color"
 
 # give me my code
-cd ~/Documents/nemesis/code
+jump code
 
 # say hello
 HI="Hello and welcome to `whoami`'s workstation!"
