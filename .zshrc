@@ -20,6 +20,7 @@ alias rmd='rm -rf'
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="cd ~/.oh-my-zsh"
 alias mkdir='mkdir -p'
+alias calabash='pepene'
 
 # suffix aliases
 alias -s pl=perl
