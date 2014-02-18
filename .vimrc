@@ -48,16 +48,16 @@ map <C-r> :w<CR>:!ruby %<CR>
 nnoremap <C-L> :nohl<CR><C-L>
 
 function! ResCur()
-  if line("'\"") <= line("$")
-          normal! g`"
-              return 1
-                endif
-            endfunction
+    if line("'\"") <= line("$")
+        normal! g`"
+        return 1
+    endif
+endfunction
 
-            augroup resCur
-                  autocmd!
-                    autocmd BufWinEnter * call ResCur()
-                augroup END
+augroup resCur
+    autocmd!
+    autocmd BufWinEnter * call ResCur()
+augroup END
 
 Bundle 'gmarik/vundle'
 Bundle 'rizzatti/funcoo.vim'
