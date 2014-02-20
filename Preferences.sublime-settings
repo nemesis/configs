@@ -30,5 +30,8 @@
         "tab_size": 2,
         "theme": "Nil.sublime-theme",
         "translate_tabs_to_spaces": true,
-        "trim_automatic_white_space": true
+        "trim_automatic_white_space": true,
+        "draw_white_space": "all",
+        "trailing_spaces_highlight_color": "error",
+        "trailing_spaces_trim_on_save": true
 }
