@@ -21,6 +21,8 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="cd ~/.oh-my-zsh"
 alias mkdir='mkdir -p'
 alias pepene='cucumber'
+alias gbl='git branch --list'
+alias grv='git remote --verbose'
 
 # suffix aliases
 alias -s pl=perl
