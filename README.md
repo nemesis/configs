@@ -1,4 +1,4 @@
-configs
+configs (dotfiles)
 =======
 Currently storing configs for:
 
