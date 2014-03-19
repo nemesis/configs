@@ -31,10 +31,11 @@ set viminfo='10,\"100,:20,%,n~/.viminfo
 set clipboard=unnamed
 set listchars=tab:»·,trail:·
 set list
+set background=dark
 hi SpecialKey ctermbg=red ctermfg=red guibg=red guifg=red
 
 call vundle#rc()
-colorscheme calmar256-dark
+colorscheme solarized
 
 map Y y$
 map <Space> :tabn<CR>
