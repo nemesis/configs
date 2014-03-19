@@ -38,7 +38,7 @@ export LSCOLORS=cxfxcxdxbxegedabagacad
 export GREP_OPTIONS='--color=auto'
 
 # exports
-export PATH=$PATH:/usr/bin/perl:/Users/nemesis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/nemesis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/nemesis/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/Users/nemesis/.local/bin:/opt/local/bin:/opt/local/sbin
+export PATH=$PATH:/usr/bin/perl:/Users/nemesis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/nemesis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/nemesis/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/Users/nemesis/.local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin
 export TERM="xterm-256color"
 
 # give me my code
@@ -47,3 +47,11 @@ jump code
 # say hello
 HI="Hello and welcome to `whoami`'s workstation!"
 echo $HI
+
+function gbd() {
+    if [[ -n $1 ]]; then
+        git branch -d $1
+    else
+        echo "No branch name specified"
+    fi
+}
