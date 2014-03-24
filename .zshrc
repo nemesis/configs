@@ -24,6 +24,7 @@ alias pepene='cucumber'
 alias gbl='git branch --list'
 alias grv='git remote --verbose'
 alias top='top -o cpu'
+alias htop='htop --sort-key CPU'
 
 # Suffix aliases
 alias -s pl=perl
