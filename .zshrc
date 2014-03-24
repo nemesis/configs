@@ -23,6 +23,7 @@ alias mkdir='mkdir -p'
 alias pepene='cucumber'
 alias gbl='git branch --list'
 alias grv='git remote --verbose'
+alias top='top -o cpu'
 
 # Suffix aliases
 alias -s pl=perl
