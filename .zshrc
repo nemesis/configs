@@ -50,6 +50,10 @@ jump code
 HI="Hello and welcome to `whoami`'s workstation!"
 echo $HI
 
+if [ "$(date +%A)" = "Friday" ] && [ $(date +%H) > 19 ]; then
+  echo "Maybe grab some 🍻  already?"
+fi
+
 # Soft delete branches in a git repo
 # Example usage: gbd my-merged-branch
 function gbd() {
