@@ -50,7 +50,7 @@ jump code
 HI="Hello and welcome to `whoami`'s workstation!"
 echo $HI
 
-if [ "$(date +%A)" = "Friday" ] && [ $(date +%H) > 19 ]; then
+if [ "$(date +%A)" = "Friday" ] && [ $(date +%H) -gt 18 ]; then
   echo "Maybe grab some 🍻  already?"
 fi
 
