@@ -16,15 +16,14 @@ set nostartofline
 set ruler
 set laststatus=2
 set visualbell
-set t_vb=
 set mouse=a
 set cmdheight=2
 set number
 set notimeout ttimeout ttimeoutlen=200
 set pastetoggle=<F11>
 set confirm
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set rtp+=~/.vim/bundle/vundle
 set viminfo='10,\"100,:20,%,n~/.viminfo
@@ -35,7 +34,7 @@ set background=dark
 hi SpecialKey ctermbg=red ctermfg=red guibg=red guifg=red
 
 call vundle#rc()
-colorscheme solarized
+colorscheme obsidian
 
 map Y y$
 map <Space> :tabn<CR>

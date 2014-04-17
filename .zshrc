@@ -1,7 +1,8 @@
 # Shell setup
 source $HOME/.bashrc # Some packages ignore the default shell and use bash for configuration
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="agnoster"
+ZSH_THEME="miloshadzic"
+# also check pygmalion
 COMPLETION_WAITING_DOTS="true"
 plugins=(git ruby github jump zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
@@ -25,6 +26,8 @@ alias gbl='git branch --list'
 alias grv='git remote --verbose'
 alias top='top -o cpu'
 alias htop='htop --sort-key CPU'
+alias fmod='stat -f "%OLp"'
+alias dl='diskutil list'
 
 # Suffix aliases
 alias -s pl=perl
@@ -44,7 +47,7 @@ export PATH=$PATH:/usr/bin/perl:/Users/nemesis/.rvm/gems/ruby-2.0.0-p247/bin:/Us
 export TERM="xterm-256color"
 
 # Give me my code
-jump code
+# jump code
 
 # Say hello
 HI="Hello and welcome to `whoami`'s workstation!"
