@@ -1,37 +1,38 @@
 {
-        "check_for_rvm": true,
-        "close_windows_when_empty": true,
-        "color_scheme": "Packages/Theme - Nil/Tubnil.tmTheme",
-        "folder_exclude_patterns":
-        [
-                ".git",
-                ".bundle",
-                ".sass-cache",
-                ".svn",
-                ".hg"
-        ],
-        "font_face": "Menlo for Powerline",
-        "font_size": 13.0,
-        "highlight_line": true,
-        "highlight_modified_tabs": true,
-        "ignored_packages":
-        [
-                "Vintage"
-        ],
-        "match_brackets": true,
-        "match_brackets_angle": true,
-        "match_brackets_braces": true,
-        "match_brackets_content": true,
-        "match_brackets_square": true,
-        "max_columns": 2,
-        "open_files_in_new_window": false,
-        "scroll_past_end": true,
-        "scroll_speed": 2,
-        "tab_size": 2,
-        "theme": "Nil.sublime-theme",
-        "translate_tabs_to_spaces": true,
-        "trim_automatic_white_space": true,
-        "draw_white_space": "all",
-        "trailing_spaces_highlight_color": "error",
-        "trailing_spaces_trim_on_save": true
+  "check_for_rvm": true,
+  "close_windows_when_empty": true,
+  "color_scheme": "Packages/Theme - Nil/Tubnil.tmTheme",
+  "draw_white_space": "all",
+  "folder_exclude_patterns":
+  [
+    ".git",
+    ".bundle",
+    ".sass-cache",
+    ".svn",
+    ".hg"
+  ],
+  "font_face": "Menlo for Powerline",
+  "font_size": 13.0,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "match_brackets": true,
+  "match_brackets_angle": true,
+  "match_brackets_braces": true,
+  "match_brackets_content": true,
+  "match_brackets_square": true,
+  "max_columns": 2,
+  "open_files_in_new_window": false,
+  "scroll_past_end": true,
+  "scroll_speed": 2,
+  "tab_size": 2,
+  "theme": "Nil.sublime-theme",
+  "trailing_spaces_highlight_color": "error",
+  "trailing_spaces_trim_on_save": true,
+  "translate_tabs_to_spaces": true,
+  "trim_automatic_white_space": true,
+  "trim_on_save": true
 }

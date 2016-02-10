@@ -25,7 +25,7 @@ set confirm
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/Vundle.vim
 set viminfo='10,\"100,:20,%,n~/.viminfo
 set clipboard=unnamed
 set listchars=tab:»·,trail:·
@@ -64,10 +64,8 @@ Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'vim-perl/vim-perl'
 Bundle 'flazz/vim-colorschemes'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
-
-let g:Powerline_symbols = 'fancy'
+Plugin 'bling/vim-airline'
 
 set termencoding=utf-8
 set statusline=2

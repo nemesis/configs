@@ -1,10 +1,9 @@
 # Shell setup
-source $HOME/.bashrc # Some packages ignore the default shell and use bash for configuration
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="miloshadzic"
 # also check pygmalion
 COMPLETION_WAITING_DOTS="true"
-plugins=(git ruby github jump zsh-syntax-highlighting)
+plugins=(git ruby github zsh-syntax-highlighting wd)
 source $ZSH/oh-my-zsh.sh
 
 # Who doesn't love rvm?
@@ -28,6 +27,14 @@ alias top='top -o cpu'
 alias htop='htop --sort-key CPU'
 alias fmod='stat -f "%OLp"'
 alias dl='diskutil list'
+alias be='bundle exec'
+alias gac='git add --all && git commit -m'
+alias gbc='git branch --merged | grep -v \* | xargs git branch -d'
+alias gps='git pull saltx master'
+
+# Humour, much humour
+
+alias piceana='cucumber'
 
 # Suffix aliases
 alias -s pl=perl
@@ -54,7 +61,7 @@ HI="Hello and welcome to `whoami`'s workstation!"
 echo $HI
 
 if [ "$(date +%A)" = "Friday" ] && [ $(date +%H) -gt 18 ]; then
-  echo "Maybe grab some 🍻  already?"
+  echo "Maybe grab some 🍻 already?"
 fi
 
 # Soft delete branches in a git repo
@@ -66,3 +73,5 @@ function gbd() {
         echo "No branch name specified"
     fi
 }
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
