@@ -1,6 +1,6 @@
-configs (dotfiles)
+configs and dotfiles
 =======
-Currently storing configs for:
+Currently storing prefs for:
 
 * Oh-My-Zsh! shell
 * Sublime Text 2
