@@ -6,4 +6,5 @@ Currently storing prefs for:
 * Sublime Text 2
 * Vim
 * iTerm 2
+* Visual Studio Code
 * Quake III Arena / Quake Live

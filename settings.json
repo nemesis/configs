@@ -1,0 +1,31 @@
+{
+  "window.zoomLevel": 1,
+  "files.insertFinalNewline": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "explorer.confirmDragAndDrop": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "prettier.bracketSpacing": false,
+  "prettier.printWidth": 120,
+  "prettier.stylelintIntegration": true,
+  "prettier.trailingComma": "es5",
+  "workbench.editor.enablePreview": false,
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "(Actual) Obsidian",
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "merge-conflict.diffViewPosition": "Below",
+  "diffEditor.renderSideBySide": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "workbench.settings.openDefaultKeybindings": true
+}
